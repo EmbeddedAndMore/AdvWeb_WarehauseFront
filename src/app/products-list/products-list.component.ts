@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http'
+import { HttpClient } from '@angular/common/http';
+import { Product } from '../models/product';
+import { Observable } from 'rxjs';
+
 
 @Component({
   selector: 'products-list',
@@ -9,12 +11,17 @@ import { HttpClient } from '@angular/common/http'
 })
 export class ProductsListComponent implements OnInit {
 
-  constructor() { }
+  products : Product[];
+  constructor(private http : HttpClient) { }
 
   ngOnInit() {
+    this.getProducts().subscribe((data : Product[])=>{
+        this.products = data;
+        console.log(this.products[0].entrDate)
+    });
   }
 
   getProducts(){
-
+    return this.http.get<Product[]>("https://localhost:44393/api/products");
   }
 }

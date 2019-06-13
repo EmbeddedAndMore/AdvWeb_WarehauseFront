@@ -3,23 +3,21 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ProductsComponent } from './products.component';
-import { ProductsService } from './products.service';
 import { AppNavbarComponent } from './app-navbar/app-navbar.component';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HttpClientModule } from '@angular/common/http';
 
 import { ProductsListComponent } from './products-list/products-list.component';
-
+import { AddProductComponent } from './add-product/add-product.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProductsComponent,
     AppNavbarComponent,
-    ProductsListComponent
+    ProductsListComponent,
+    AddProductComponent
   ],
   imports: [
     BrowserModule,
@@ -28,8 +26,7 @@ import { ProductsListComponent } from './products-list/products-list.component';
     HttpClientModule
   ],
   providers: [
-    ProductsService
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent, AddProductComponent]
 })
 export class AppModule { }

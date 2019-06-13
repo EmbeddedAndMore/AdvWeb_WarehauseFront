@@ -7,12 +7,12 @@
   <div class="collapse navbar-collapse" id="navbarsExampleDefault">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Dashbord <span class="sr-only">(current)</span></a>
+        <a class="nav-link" routerLink="/Products">Dashbord <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item dropdown" ngbDropdown>
-        <a class="nav-link dropdown-toggle" href="#"  id="dropdown01" ngbDropdownToggle>Menu</a>
+        <a class="nav-link dropdown-toggle"  id="dropdown01" style="cursor: pointer"  ngbDropdownToggle>Menu</a>
         <div class="dropdown-menu" aria-labelledby="dropdown01" ngbDropdownMenu>
-          <a class="dropdown-item" href="#">Add Product</a>
+          <a class="dropdown-item" routerLink="/AddProduct">Add Product</a>
           <a class="dropdown-item" href="#">Remove Product</a>
           <a class="dropdown-item" href="#">Reports</a>
         </div>

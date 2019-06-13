@@ -27,6 +27,6 @@ import { AddProductComponent } from './add-product/add-product.component';
   ],
   providers: [
   ],
-  bootstrap: [AppComponent, AddProductComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

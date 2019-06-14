@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Product } from '../models/product';
-import { Observable } from 'rxjs';
 
 
 @Component({
@@ -22,6 +21,6 @@ export class ProductsListComponent implements OnInit {
   }
 
   getProducts(){
-    return this.http.get<Product[]>("https://localhost:44393/api/products");
+    return this.http.get<Product[]>("http://localhost:56130/api/products");
   }
 }

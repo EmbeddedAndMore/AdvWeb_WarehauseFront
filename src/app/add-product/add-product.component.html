@@ -3,6 +3,48 @@
 
   <h1>Bootstrap starter template</h1>
   <p class="lead">Add Product</p>
+  <div class="container">
+    <div class="row mt-2">
+      <div class="col-lg-4">
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+          <div class="input-group">
+              <input type="text" class="form-control" placeholder="Product name" [(ngModel)]= "productName"/> 
+          </div><!-- /input-group -->
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+    <div class="row mt-2">
+      <div class="col-lg-4">
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+          <div class="input-group">
+              <input type="text" class="form-control" placeholder="Product owener" [(ngModel)]= "productOwner"/> 
+          </div><!-- /input-group -->
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+    <div class="row mt-2">
+      <div class="col-lg-4">
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+          <div class="input-group">
+              <input type="text" class="form-control" placeholder="Description" [(ngModel)]= "productDescription"/> 
+          </div><!-- /input-group -->
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+    <div class="row mt-2">
+      <div class="col-lg-4">
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+          <div class="input-group">
+              <input type="button" class="btn btn-primary" value="Submit" (click)="addProduct()"/>
+          </div><!-- /input-group -->
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+  </div>
+  
 
 
 

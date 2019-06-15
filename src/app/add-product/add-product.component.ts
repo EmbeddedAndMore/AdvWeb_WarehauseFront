@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Product } from '../models/product';
-import { ProductsListComponent } from '../products-list/products-list.component';
 
 @Component({
   selector: 'add-product',
